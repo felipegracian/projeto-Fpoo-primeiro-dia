@@ -14,12 +14,22 @@ public class Tabuada {
 		String[] tabuada = new String[tamanho];
 		int i = 0;
 		
-		while(minMultiplicador < maxMultiplicador ) {
+		while(minMultiplicador <= maxMultiplicador ) {
 			
+			int produto = multiplicando * minMultiplicador;
+			
+			
+			String resultado = multiplicando + " X " + minMultiplicador + " = " + produto;
+			tabuada[i] = resultado;
+			
+			
+			i++;
+			minMultiplicador++;
 			
 			
 		}
 		
+		return tabuada;
 		
 		
 	

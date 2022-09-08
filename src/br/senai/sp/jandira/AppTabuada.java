@@ -13,7 +13,20 @@ public class AppTabuada {
 		tela.altura = 600;
 		tela.criarTela();
 		
+		Tabuada tabuada = new Tabuada();
+		tabuada.multiplicando = 2;
+		tabuada.minMultiplicador = 1;
+		tabuada.maxMultiplicador = 10;
 		
+		String[] resultado = tabuada.getTabuada();
+		int i = 0;
+		
+		
+		while (i < resultado.length) {
+			System.out.println(resultado[i]);
+			
+			i++;
+		}
 
 	}
 
